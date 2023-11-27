@@ -1,0 +1,15 @@
+public class FinalProject {
+    private static final Car[] availableCars = {
+            new Car("Toyota", "Camry", 2021),
+            new Car("Honda", "Accord", 2021),
+            new Car("Ford", "Mustang", 2021)
+    };
+ 
+    /**
+     * Displays the available cars to the customer.
+     */
+    private static void displayAvailableCars() {
+        System.out.println("Available Cars:");
+        for (int i = 0; i < availableCars.length; i++) {
+            Car car = availableCars[i];
+            System.out.println((i + 1) + ". " + car.getMake() + " " + car.getModel() + " (" + car.getYear() + ")");
